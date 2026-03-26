@@ -20,3 +20,13 @@ body { font-family: 'Segoe UI', sans-serif; background-color: var(--pandi-bg); c
 .btn-pandi:hover { background-color: var(--pandi-dark); color: white; }
 
 .card-pandi { border: none; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.bg-purple {
+    background-color: var(--pandi-purple) !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.card-pandi i {
+    color: var(--pandi-purple);
+    margin-right: 10px;
+}
