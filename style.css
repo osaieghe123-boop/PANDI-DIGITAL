@@ -1,24 +1,22 @@
 :root {
     --pandi-purple: #6b21a8;
     --pandi-dark: #1e1b4b;
-    --pandi-light: #f3f4f6;
-    --accent: #a855f7;
+    --pandi-bg: #f8fafc;
 }
 
-body { font-family: 'Inter', sans-serif; background-color: var(--pandi-light); color: var(--pandi-dark); }
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--pandi-bg); color: var(--pandi-dark); }
 
-.navbar { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.1); }
+.navbar { background: white; border-bottom: 2px solid var(--pandi-purple); }
 
-.hero-section {
-    background: linear-gradient(rgba(107, 33, 168, 0.7), rgba(30, 27, 75, 0.8)), url('../pandi_digital_cover.jpeg');
+.hero-header {
+    background: linear-gradient(rgba(30, 27, 75, 0.85), rgba(107, 33, 168, 0.75)), url('pandi_digital_cover.jpeg');
     background-size: cover; background-position: center;
-    color: white; padding: 100px 0;
+    color: white; padding: 120px 0;
 }
 
-.btn-pandi { background-color: var(--pandi-purple); color: white; border-radius: 50px; padding: 12px 30px; transition: 0.3s; }
-.btn-pandi:hover { background-color: var(--pandi-dark); transform: translateY(-3px); color: white; }
+.pillar-icon { font-size: 2.5rem; color: var(--pandi-purple); display: block; margin-bottom: 10px; }
 
-.price-card { background: white; border-radius: 15px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
-.price-card:hover { transform: scale(1.05); border: 1px solid var(--pandi-purple); }
+.btn-pandi { background-color: var(--pandi-purple); color: white; border-radius: 50px; padding: 10px 30px; border: none; }
+.btn-pandi:hover { background-color: var(--pandi-dark); color: white; }
 
-.pillar-icon { font-size: 2rem; color: var(--pandi-purple); margin-bottom: 15px; }
+.card-pandi { border: none; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
