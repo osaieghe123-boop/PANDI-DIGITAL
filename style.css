@@ -1,1 +1,24 @@
+:root {
+    --pandi-purple: #6b21a8;
+    --pandi-dark: #1e1b4b;
+    --pandi-light: #f3f4f6;
+    --accent: #a855f7;
+}
 
+body { font-family: 'Inter', sans-serif; background-color: var(--pandi-light); color: var(--pandi-dark); }
+
+.navbar { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.1); }
+
+.hero-section {
+    background: linear-gradient(rgba(107, 33, 168, 0.7), rgba(30, 27, 75, 0.8)), url('../pandi_digital_cover.jpeg');
+    background-size: cover; background-position: center;
+    color: white; padding: 100px 0;
+}
+
+.btn-pandi { background-color: var(--pandi-purple); color: white; border-radius: 50px; padding: 12px 30px; transition: 0.3s; }
+.btn-pandi:hover { background-color: var(--pandi-dark); transform: translateY(-3px); color: white; }
+
+.price-card { background: white; border-radius: 15px; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
+.price-card:hover { transform: scale(1.05); border: 1px solid var(--pandi-purple); }
+
+.pillar-icon { font-size: 2rem; color: var(--pandi-purple); margin-bottom: 15px; }
