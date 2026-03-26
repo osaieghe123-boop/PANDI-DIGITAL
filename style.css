@@ -1,46 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pandi Digital | Leading Digital Business Development</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<link rel="stylesheet" href="style.css">
+/* PANDI DIGITAL: MASTER STYLESHEET 2026
+   Theme: Modern Tech-Purple & Agro-Green 
+*/
 
-<nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="pandi_digital_logo.jpeg" alt="Pandi Logo" height="60">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services & Catalog</a></li>
-                <li class="nav-item ms-lg-3"><a class="btn btn-pandi" href="https://wa.me/2349153538791">Book Now</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+:root {
+    --pandi-purple: #6b21a8;      /* Primary Brand Color */
+    --pandi-purple-dark: #4c1d95; /* Hover states */
+    --pandi-purple-light: #f5f3ff;/* Background accents */
+    --pandi-dark: #1e1b4b;       /* Navbar & Footer */
+    --pandi-green: #166534;      /* Agricpreneurism Theme */
+    --pandi-green-light: #dcfce7;
+    --white: #ffffff;
+    --text-muted: #64748b;
+}
 
-<header class="hero-header text-center">
-    <div class="container py-5">
-        <h1 class="display-2 fw-bold mb-3">Bridging the Offline-Online Gap</h1>
-        <p class="lead mb-5 px-lg-5">We transform traditional enterprises and non-profits into thriving digital-first brands. 
-            From Benin City to the global market, we build the tech that fuels your growth.</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="services.html" class="btn btn-pandi btn-lg px-5">View Services</a>
-            <a href="#about" class="btn btn-outline-light rounded-pill btn-lg px-5">Learn More</a>
-        </div>
-    </div>
-</header>
+/* Global Transitions & Smooth Scroll */
+html { scroll-behavior: smooth; }
+body { 
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; 
+    background-color: #fafafa;
+    color: var(--pandi-dark);
+    line-height: 1.6;
+}
 
-<section class="py-5 bg-white border-bottom">
+/* Navigation - Glassmorphism Effect */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid var(--pandi-purple);
+    padding: 0.8rem 0;
+}
+.nav-link { font-weight: 500; color: var(--pandi-dark) !important; transition: 0.3s; }
+.nav-link:hover { color: var(--pandi-purple) !important; }
+
+/* Dynamic Hero Headers */
+.hero-header {
+    background: linear-gradient(rgba(30, 27, 75, 0.85), rgba(107, 33, 168, 0.75)), url('pandi_digital_cover.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect for Chrome */
+    color: var(--white);
+    padding: 140px 0 100px;
+}
+
+/* Buttons */
+.btn-pandi {
+    background-color: var(--pandi-purple);
+    color: var(--white);
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(107, 33, 168, 0.3);
+}
+.btn-pandi:hover {
+    background-color: var(--pandi-purple-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 33, 168, 0.4);
+    color: var(--white);
+}
+
+/* Cards & Sections */
+.card-pandi {
+    border: none;
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    overflow: hidden;
+}
+.card-pandi:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(107, 33, 168, 0.1);
+}
+
+/* 6-Pillar Philosophy Icons */
+.pillar-icon {
+    font-size: 2.8rem;
+    color: var(--pandi-purple);
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+/* Agricpreneurism Specifics */
+.color-green { color: var(--pandi-green) !important; }
+.bg-agro { background-color: var(--pandi-green-light); }
+.agro-hero {
+    background: linear-gradient(rgba(22, 101, 52, 0.8), rgba(107, 33, 168, 0.7)), url('pandi_digital_cover.jpeg');
+    background-size: cover;
+    color: var(--white);
+    padding: 100px 0;
+}
+
+/* Utility Helpers */
+.color-purple { color: var(--pandi-purple) !important; }
+.extra-small { font-size: 0.85rem; }
+.shadow-soft { box-shadow: 0 20px 50px rgba(0,0,0,0.03); }
+
+/* Pricing Table Styling */
+.table-pandi-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.table-pandi-wrapper thead {
+    background-color: var(--pandi-dark);
+    color: var(--white);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero-header { padding: 80px 0 60px; }
+    .display-2 { font-size: 2.5rem; }
+    .display-3 { font-size: 2.2rem; }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f1f5f9;
+    border-top: 1px solid #e2e8f0;
+    }<section class="py-5 bg-white border-bottom">
     <div class="container">
         <div class="row text-center g-4">
             <div class="col-md-3">
