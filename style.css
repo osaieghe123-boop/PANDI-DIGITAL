@@ -1,40 +1,50 @@
-<link rel="stylesheet" href="style.css">
-/* PANDI DIGITAL: MASTER STYLESHEET 2026
-   Theme: Modern Tech-Purple & Agro-Green 
-*/
-
+/* PANDI DIGITAL MASTER V3.0 - 2026 */
 :root {
-    --pandi-purple: #6b21a8;      /* Primary Brand Color */
-    --pandi-purple-dark: #4c1d95; /* Hover states */
-    --pandi-purple-light: #f5f3ff;/* Background accents */
-    --pandi-dark: #1e1b4b;       /* Navbar & Footer */
-    --pandi-green: #166534;      /* Agricpreneurism Theme */
-    --pandi-green-light: #dcfce7;
-    --white: #ffffff;
-    --text-muted: #64748b;
+    --pandi-purple: #6b21a8;
+    --pandi-dark: #0f172a;
+    --pandi-accent: #a855f7;
+    --pandi-green: #15803d;
+    --glass: rgba(255, 255, 255, 0.95);
+    --shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-/* Global Transitions & Smooth Scroll */
-html { scroll-behavior: smooth; }
-body { 
-    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; 
-    background-color: #fafafa;
-    color: var(--pandi-dark);
-    line-height: 1.6;
-}
+body { font-family: 'Inter', sans-serif; background: #fdfdfd; color: var(--pandi-dark); overflow-x: hidden; }
 
-/* Navigation - Glassmorphism Effect */
-.navbar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 2px solid var(--pandi-purple);
-    padding: 0.8rem 0;
-}
-.nav-link { font-weight: 500; color: var(--pandi-dark) !important; transition: 0.3s; }
-.nav-link:hover { color: var(--pandi-purple) !important; }
+/* Global UI Elements */
+.navbar { background: var(--glass); backdrop-filter: blur(15px); border-bottom: 3px solid var(--pandi-purple); }
+.btn-pandi { background: var(--pandi-purple); color: white; border-radius: 50px; padding: 14px 35px; border: none; font-weight: 700; transition: 0.3s; box-shadow: 0 8px 20px rgba(107, 33, 168, 0.3); }
+.btn-pandi:hover { background: var(--pandi-accent); transform: translateY(-3px); color: white; }
 
-/* Dynamic Hero Headers */
+/* Dynamic Hero Section */
 .hero-header {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(107, 33, 168, 0.8)), url('pandi_digital_cover.jpeg');
+    background-size: cover; background-attachment: fixed; background-position: center;
+    padding: 180px 0 120px; color: white; text-align: center;
+}
+
+/* Portfolio & Card Layouts */
+.pandi-card {
+    background: white; border-radius: 25px; border: 1px solid #eee; padding: 40px;
+    transition: 0.4s ease-in-out; box-shadow: var(--shadow); height: 100%;
+}
+.pandi-card:hover { transform: translateY(-15px); border-color: var(--pandi-purple); }
+
+.portfolio-img {
+    height: 250px; width: 100%; object-fit: cover; border-radius: 20px;
+    margin-bottom: 20px; background: #e2e8f0; /* Placeholder color */
+}
+
+/* Floating WhatsApp Button */
+.fab-whatsapp {
+    position: fixed; bottom: 30px; right: 30px; background: #25d366;
+    color: white; width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 1000;
+}
+
+/* Feature Sections */
+.bg-purple-light { background: #f5f3ff; }
+.color-purple { color: var(--pandi-purple); }.hero-header {
     background: linear-gradient(rgba(30, 27, 75, 0.85), rgba(107, 33, 168, 0.75)), url('pandi_digital_cover.jpeg');
     background-size: cover;
     background-position: center;
