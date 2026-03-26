@@ -30,3 +30,20 @@ body { font-family: 'Segoe UI', sans-serif; background-color: var(--pandi-bg); c
     color: var(--pandi-purple);
     margin-right: 10px;
 }
+.extra-small {
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.bg-purple {
+    background-color: var(--pandi-purple) !important;
+}
+
+.table-dark {
+    background-color: var(--pandi-dark) !important;
+    border: none;
+}
+
+.card-pandi i {
+    color: var(--pandi-purple);
+}
